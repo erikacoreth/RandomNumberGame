@@ -1,29 +1,34 @@
-Algorithm
-1. Import random number generator function
+# Guess the Number Game
 
-2. Generate a Random Number:
--Use the generate_random_number(min_num, max_num) function to generate and store a random number between 1 and 100.
+## Overview
+"Guess the Number Game" is a simple, interactive Python console game where players attempt to guess a randomly generated number between 1 and 100. Each incorrect guess provides a hint to help the player zero in on the right number, making the game both engaging and mildly educational.
 
-3.Define check guess function
+## Features
+- **Interactive Gameplay**: Players interact with the game via the console, entering guesses and receiving immediate feedback.
+- **Hint System**: Hints are provided to guide players after every two incorrect guesses.
+- **Performance Tracking**: The game tracks the number of attempts a player makes to guess the correct number and congratulates them upon success.
 
-4.Define the get hint function
--add all hints that will be given once the user makes 2 incorrect guesses
+## How to Run
+To play the "Guess the Number Game", you will need Python installed on your computer. Follow these simple steps:
 
-5. Initialize the Game:
--Print a welcome message.
--Set the range for the random number (1 to 100).
--Initialize the guess attempt counter and hint_counter, set both to zero.
+1. **Clone the Repository**:
+    ```
+    git clone https://github.com/yourusername/guess-the-number.git
+    ```
+2. **Navigate to the Project Directory**:
+    ```
+    cd guess-the-number
+    ```
+3. **Run the Game**:
+    ```
+    python guess_number.py
+    ```
 
-6. Check the Guess:
--Use check_guess(random_num, user_guess) to verify if the guess is correct.
--If correct:
- -Print a success message with the number of attempts taken.
- -Break the loop.
--If incorrect:
--Start hint counter
- -Provide feedback on whether the guess should be higher or lower.
- -Every two incorrect attempts, provide an additional hint:
-  -Select a random hint from a list (even/odd, multiple of 5, or if the square of the number is greater than or less than 1000).
+## How to Play
+1. **Start the Game**: Run the script as mentioned above. The game will automatically generate a random number between 1 and 100 and ask you to make a guess.
+2. **Enter Your Guess**: Input your guess into the console. The game will inform you if your guess is too high or too low.
+3. **Receive Hints**: Every two incorrect guesses, you'll receive a hint about the number's properties (e.g., even/odd, multiple of 5, etc.).
+4. **Winning the Game**: Continue guessing until you find the right number. The game will then tell you how many attempts it took you to guess correctly.
 
-5. Repeat:
--Continue to prompt the user to enter guesses until the correct number is guessed.
+## Development
+This game is a great starter project for those looking to improve their Python skills. It involves basic programming concepts such as loops, conditionals, functions, and random number generation.
